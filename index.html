@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northvane</title>
+<meta name="description" content="Northvane: tools and research on Polkadot and Kusama, read from chain.">
+<link rel="icon" href="logo.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  /* One slate theme for every viewer, matched to the logo and X header (#202832). */
+  :root {
+    color-scheme: dark;
+    --page: #202832; --card: #29323e; --line: #374250; --text: #f2f1ec; --muted: #a9b2bd; --faint: #95a1ae; --accent: #8fb6ff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--text);
+    font: 15px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+  .banner { display: block; width: 100%; max-width: 1100px; height: auto; margin: 0 auto; }
+  main { max-width: 560px; margin: 0 auto; padding: 8px 16px 40px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  h1 { font-size: 26px; font-weight: 650; letter-spacing: -0.02em; margin: 0; }
+  h2 { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 24px 0 8px; }
+  ul { list-style: none; margin: 0; padding: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+  li + li { border-top: 1px solid var(--line); }
+  a { display: block; padding: 13px 16px; color: inherit; text-decoration: none; }
+  a:hover .name, a:focus-visible .name { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 14px; }
+  .name { font-weight: 600; }
+  .name small { font-weight: 500; color: var(--faint); font-size: 12px; margin-left: 6px; }
+  .what { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+  .profiles { display: flex; flex-wrap: wrap; gap: 8px; }
+  .profiles a { display: inline-block; padding: 8px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; font-size: 14px; }
+  .profiles a:hover { border-color: var(--accent); color: var(--accent); }
+  footer { margin-top: 28px; font-size: 12px; color: var(--faint); }
+</style>
+</head>
+<body>
+<img class="banner" src="header.png" alt="" width="1500" height="500">
+<main>
+  <h1 class="sr">Northvane</h1>
+
+  <h2 style="margin-top:8px">Work</h2>
+  <ul>
+    <li><a href="https://northvanedot.github.io/kusama-vision-bounty-workbench/">
+      <div class="name">Kusama Vision Bounty Workbench</div>
+      <div class="what">For the programme's curators: child-bounty runbooks filled in from chain, payout checks and verified call data.</div>
+    </a></li>
+    <li><a href="https://northvanedot.github.io/dotusd-peg/">
+      <div class="name">dotUSD peg</div>
+      <div class="what">dotUSD price, supply and backing, read live from Asset Hub.</div>
+    </a></li>
+    <li><a href="https://whoisaperson.dev-dot.li/">
+      <div class="name">Who is a person? <small>devnet</small></div>
+      <div class="what">Explains proof-of-personhood state in plain English.</div>
+    </a></li>
+    <li><a href="https://oneperson.dev-dot.li/">
+      <div class="name">One Person <small>devnet</small></div>
+      <div class="what">A game about where ring proofs stop guaranteeing uniqueness.</div>
+    </a></li>
+  </ul>
+
+  <h2>Elsewhere</h2>
+  <div class="profiles">
+    <a href="https://github.com/northvanedot">GitHub</a>
+    <a href="https://x.com/northvanedot">X</a>
+    <a href="https://forum.polkadot.network/u/Northvane">Polkadot Forum</a>
+  </div>
+
+  <footer>Devnet apps run only while the Polkadot devnet is up. Source for everything is on GitHub.</footer>
+</main>
+</body>
+</html>
